@@ -1,0 +1,12 @@
+To run this project use following commands:
+
+javac CanteenManagement.java
+java -cp "./lib/mysql.jar;" CanteenManagement
+
+ or just click the .bat file
+
+
+username and password is : admin 
+
+if you want to get the image on the application than change the path of the image file and save the class file
+ 
