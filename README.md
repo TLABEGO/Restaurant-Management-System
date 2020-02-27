@@ -10,10 +10,16 @@ The Restaurant Management System was developed using Java programming language i
 
 The main features of the system available to the user are the following:
 
-Food – Automatic Computation when a user key in of order based on quantity.
+* Food – Automatic Computation when a user key in of order based on quantity.
 
-Customer – Automatic Computation of customers bills
+* Customer – Automatic Computation of customers bills
 
-Customer – Automatic Computation of customers change
+* Customer – Automatic Computation of customers change
 
-Customer – Capable of printing the orders of customers
+* Customer – Capable of printing the orders of customers
+
+This RMS was not created by/for any organisation or a Restaurant company, but rather, i only created it to showcase how i can be able to solve different kinds of business problems using my skills in of programming. 
+
+***
+
+{exp: copyright: show}
