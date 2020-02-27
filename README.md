@@ -22,7 +22,8 @@ This RMS was not created by/for any organisation or a Restaurant company, but ra
 
 ***
 
-###Copyright
+### Copyright
+MIT
 
 Copyright (c) <2020> <MIT>
 
