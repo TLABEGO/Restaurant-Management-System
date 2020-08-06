@@ -341,15 +341,15 @@ public class RMS {
 		lblNewLabel_1_2_1.setBounds(25, 128, 204, 39);
 		panel_1_1_1_1.add(lblNewLabel_1_2_1);
 		
-		JLabel lblNewLabel_1_1_1 = new JLabel("Cost of Meal");
-		lblNewLabel_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		lblNewLabel_1_1_1.setBounds(25, 78, 218, 39);
-		panel_1_1_1_1.add(lblNewLabel_1_1_1);
-		
-		JLabel costOfMeal = new JLabel("Cost of Drinks");
+		JLabel costOfMeal = new JLabel("Cost of Meal");
 		costOfMeal.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		costOfMeal.setBounds(25, 28, 166, 39);
+		costOfMeal.setBounds(25, 78, 218, 39);
 		panel_1_1_1_1.add(costOfMeal);
+		
+		JLabel costOfDrinks = new JLabel("Cost of Drinks");
+		costOfDrinks.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		costOfDrinks.setBounds(25, 28, 166, 39);
+		panel_1_1_1_1.add(costOfDrinks);
 		
 		JLabel lblCostOfDrinks = new JLabel("");
 		lblCostOfDrinks.setHorizontalAlignment(SwingConstants.RIGHT);
