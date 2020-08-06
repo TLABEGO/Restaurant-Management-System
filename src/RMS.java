@@ -19,7 +19,7 @@ import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JSeparator;
 
-public class Restaurant_MS {
+public class RMS {
 
 	private JFrame frame;
 	private JTextField textField;
@@ -37,7 +37,7 @@ public class Restaurant_MS {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Restaurant_MS window = new Restaurant_MS();
+					RMS window = new RMS();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -49,7 +49,7 @@ public class Restaurant_MS {
 	/**
 	 * Create the application.
 	 */
-	public Restaurant_MS() {
+	public RMS() {
 		initialize();
 	}
 
