@@ -22,9 +22,9 @@ import javax.swing.JSeparator;
 public class RMS {
 
 	private JFrame frame;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField txtChickenBurger;
+	private JTextField txtChickenMeal;
+	private JTextField txtCheeseBurger;
 	private JTextField textField_3;
 	private JTextField textField_4;
 	private JTextField textField_5;
@@ -97,8 +97,26 @@ public class RMS {
 		btnTotal.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			
-//				double ChickBurger = Double.parseDouble(jtxtChickBurger.getText());
+				double chickenBurger = Double.parseDouble(txtChickenBurger.getText());
+				double iChikenBurger = 10.50;
+				double burger;
+				burger = (chickenBurger * iChikenBurger);
+				String Meal = String.format("%.2f", burger);
+				btnTotal.setText(Meal);
 				
+				double chickenMeal = Double.parseDouble(txtChickenMeal.getText());
+				double iChikenMeal = 10.50;
+				double burgerMeal;
+				burgerMeal = (chickenMeal * iChikenMeal);
+				String imeal = String.format("%.2f", burgerMeal + burger);
+				btnTotal.setText(imeal);
+				
+				double cheeseBurger = Double.parseDouble(txtCheeseBurger.getText());
+				double iCheeseBurger = 15.50;
+				double cheeseBurgerMeal;
+				cheeseBurgerMeal = (cheeseBurger * iCheeseBurger);
+				String cheese = String.format("%.2f", cheeseBurgerMeal + iCheeseBurger + cheeseBurger);
+				btnTotal.setText(cheese);
 			}
 		});
 		btnTotal.setFont(new Font("Tahoma", Font.PLAIN, 25));
@@ -328,10 +346,10 @@ public class RMS {
 		lblNewLabel_1_1_1.setBounds(25, 78, 218, 39);
 		panel_1_1_1_1.add(lblNewLabel_1_1_1);
 		
-		JLabel lblNewLabel_1_3 = new JLabel("Cost of Drinks");
-		lblNewLabel_1_3.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		lblNewLabel_1_3.setBounds(25, 28, 166, 39);
-		panel_1_1_1_1.add(lblNewLabel_1_3);
+		JLabel costOfMeal = new JLabel("Cost of Drinks");
+		costOfMeal.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		costOfMeal.setBounds(25, 28, 166, 39);
+		panel_1_1_1_1.add(costOfMeal);
 		
 		JLabel lblCostOfDrinks = new JLabel("");
 		lblCostOfDrinks.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -339,11 +357,11 @@ public class RMS {
 		panel_1_1_1_1.add(lblCostOfDrinks);
 		lblCostOfDrinks.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		
-		JLabel lblCostOfMeal = new JLabel("");
-		lblCostOfMeal.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblCostOfMeal.setBorder(new LineBorder(new Color(0, 0, 0), 2));
-		lblCostOfMeal.setBounds(310, 78, 204, 39);
-		panel_1_1_1_1.add(lblCostOfMeal);
+		JLabel txtCostOfMeal = new JLabel("");
+		txtCostOfMeal.setHorizontalAlignment(SwingConstants.RIGHT);
+		txtCostOfMeal.setBorder(new LineBorder(new Color(0, 0, 0), 2));
+		txtCostOfMeal.setBounds(310, 78, 204, 39);
+		panel_1_1_1_1.add(txtCostOfMeal);
 		
 		JLabel lblCostOFDelivery = new JLabel("");
 		lblCostOFDelivery.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -357,38 +375,38 @@ public class RMS {
 		frame.getContentPane().add(panel_1_1_1_2);
 		panel_1_1_1_2.setLayout(null);
 		
-		JLabel lblNewLabel_1 = new JLabel("Chicken Buger");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		lblNewLabel_1.setBounds(31, 36, 166, 39);
-		panel_1_1_1_2.add(lblNewLabel_1);
+		JLabel chickenBuger = new JLabel("Chicken Buger");
+		chickenBuger.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		chickenBuger.setBounds(31, 36, 166, 39);
+		panel_1_1_1_2.add(chickenBuger);
 		
-		JLabel lblNewLabel_1_1 = new JLabel("Chicken Buger Meal");
-		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		lblNewLabel_1_1.setBounds(31, 86, 218, 39);
-		panel_1_1_1_2.add(lblNewLabel_1_1);
+		JLabel chickenMeal = new JLabel("Chicken Buger Meal");
+		chickenMeal.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		chickenMeal.setBounds(31, 86, 218, 39);
+		panel_1_1_1_2.add(chickenMeal);
 		
-		JLabel lblNewLabel_1_2 = new JLabel("Cheese Buger");
-		lblNewLabel_1_2.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		lblNewLabel_1_2.setBounds(31, 136, 166, 39);
-		panel_1_1_1_2.add(lblNewLabel_1_2);
+		JLabel cheeseBurger = new JLabel("Cheese Buger");
+		cheeseBurger.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		cheeseBurger.setBounds(31, 136, 166, 39);
+		panel_1_1_1_2.add(cheeseBurger);
 		
-		textField = new JTextField();
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		textField.setBounds(293, 36, 218, 39);
-		panel_1_1_1_2.add(textField);
-		textField.setColumns(10);
+		txtChickenBurger = new JTextField();
+		txtChickenBurger.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		txtChickenBurger.setBounds(293, 36, 218, 39);
+		panel_1_1_1_2.add(txtChickenBurger);
+		txtChickenBurger.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		textField_1.setColumns(10);
-		textField_1.setBounds(293, 86, 218, 39);
-		panel_1_1_1_2.add(textField_1);
+		txtChickenMeal = new JTextField();
+		txtChickenMeal.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		txtChickenMeal.setColumns(10);
+		txtChickenMeal.setBounds(293, 86, 218, 39);
+		panel_1_1_1_2.add(txtChickenMeal);
 		
-		textField_2 = new JTextField();
-		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		textField_2.setColumns(10);
-		textField_2.setBounds(293, 136, 218, 39);
-		panel_1_1_1_2.add(textField_2);
+		txtCheeseBurger = new JTextField();
+		txtCheeseBurger.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		txtCheeseBurger.setColumns(10);
+		txtCheeseBurger.setBounds(293, 136, 218, 39);
+		panel_1_1_1_2.add(txtCheeseBurger);
 		
 		JLabel lblNewLabel_1_2_2 = new JLabel("Drink");
 		lblNewLabel_1_2_2.setFont(new Font("Tahoma", Font.PLAIN, 25));
